@@ -57,11 +57,6 @@ export default function NFTToken(props) {
 , {name:'Tier 1 Emerald', img:'sEmerald.png'}
 , {name:'Tier 1 Sapphire', img:'sSapphire.png'}
 , {name:'Tier 1 Amber', img:'sAmber.png'}
-
-
-
-
-
 ];
   for (var index=0; index < frontendArray.length; index++){
     if (props.item.name === frontendArray[index].name){
