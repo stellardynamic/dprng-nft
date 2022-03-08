@@ -44,11 +44,38 @@ export default function NFTToken(props) {
   const classes = useStyles();
   const [openPurchase, setOpenPurchase] = useState(false);
   const [openTransfer, setOpenTransfer] = useState(false);
+
+  let imageResult = "";
+  let frontendArray = [
+  {name:'Tier 1 Amethyst', img:'sAmethyst.png'}
+, {name:'Tier 1 Opal', img:'sOpal.png'}
+, {name:'Tier 1 Onyx', img:'sOnyx.png'}
+, {name:'Tier 1 Diamond', img:'sDiamond.png'}
+, {name:'Tier 1 Zircon', img:'sZircon.png'}
+, {name:'Tier 1 Topaz', img:'sTopaz.png'}
+, {name:'Tier 1 Ruby', img:'sRuby.png'}
+, {name:'Tier 1 Emerald', img:'sEmerald.png'}
+, {name:'Tier 1 Sapphire', img:'sSapphire.png'}
+, {name:'Tier 1 Amber', img:'sAmber.png'}
+
+
+
+
+
+];
+  for (var index=0; index < frontendArray.length; index++){
+    if (props.item.name === frontendArray[index].name){
+      imageResult = frontendArray[index].img;
+    }
+  }
   const base32UIAddress = cryptography.getBase32AddressFromAddress(Buffer.from(props.item.ownerAddress, 'hex'), 'lsk').toString('binary');
+
+
   return (
     <Card>
       <CardContent>
         <Typography variant="h6">{props.item.name}</Typography>
+        <img src={imageResult} alt="NFT" />
       <Divider />
         <dl className={classes.propertyList}>
           <li>

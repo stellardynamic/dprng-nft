@@ -52,7 +52,8 @@ async apply({ asset, stateStore, reducerHandler, transaction }) {
     const lastBlockHeaders = stateStore.chain.lastBlockHeaders;
     const nftSeed = lastBlockHeaders[0].height + lastBlockHeaders[0].asset.seedReveal;
     let itemSelection = new Prando(nftSeed);
-    let item = itemSelection.nextArrayItem([ 'Tier 1 Amethyst' , 'Tier 2 Amethyst' ]
+    let item = itemSelection.nextArrayItem([ 'Tier 1 Amber'  ,  'Tier 1 Amethyst'  ,  'Tier 1 Diamond'  ,  'Tier 1 Zircon'  ,  'Tier 1 Onyx'  , 'Tier 1 Ruby'  ,  'Tier 1 Sapphire', 
+'Tier 1 Topaz'  ,  'Tier 1 Emerald'  ,  'Tier 1 Opal']
 )
 
 // 6 . Create NFT Item

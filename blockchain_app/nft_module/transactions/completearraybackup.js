@@ -53,11 +53,7 @@ async apply({ asset, stateStore, reducerHandler, transaction }) {
     const nftSeed = lastBlockHeaders[0].height + lastBlockHeaders[0].asset.seedReveal;
     let itemSelection = new Prando(nftSeed);
     let item = itemSelection.nextArrayItem([ 'Tier 1 Amber'  ,  'Tier 1 Amethyst'  ,  'Tier 1 Diamond'  ,  'Tier 1 Zircon'  ,  'Tier 1 Onyx'  , 'Tier 1 Ruby'  ,  'Tier 1 Sapphire', 
-'Tier 1 Topaz'  ,  'Tier 1 Emerald'  ,  'Tier 1 Opal' , 'Tier 2 Amber'  ,  'Tier 2 Amethyst'  ,  'Tier 2 Diamond'  ,  'Tier 2 Zircon'  ,  'Tier 2 Onyx'  ,   'Tier 2 Ruby'  ,  'Tier 2 Sapphire'  , 
-'Tier 2 Topaz'  ,  'Tier 2 Emerald'  ,  'Tier 2 Opal' , 'Tier 3 Amber'  ,  'Tier 3 Amethyst'   , 'Tier 3 Diamond'  ,  'Tier 3 Zircon'   , 'Tier 3 Onyx'  ,  'Tier 3 Ruby'  ,  'Tier 3 Sapphire' , 
-'Tier 3 Topaz'  ,  'Tier 3 Emerald'  ,  'Tier 3 Opal' , 'Tier 4 Amber'   , 'Tier 4 Amethyst'  ,  'Tier 4 Diamond'  ,  'Tier 4 Zircon'  ,  'Tier 4 Onyx'  ,  'Tier 4 Ruby'  ,  'Tier 4 Sapphire'  ,
-'Tier 4 Topaz'  ,  'Tier 4 Emerald'  ,  'Tier 4 Opal' , 'Tier 5 Amber'  ,  'Tier 5 Amethyst'   , 'Tier 5 Diamond'  ,  'Tier 5 Zircon'  ,  'Tier 5 Onyx'  ,   'Tier 5 Ruby'  ,  'Tier 5 Sapphire'  ,
-'Tier 5 Topaz'  ,  'Tier 5 Emerald'   , 'Tier 5 Opal'  ]
+'Tier 1 Topaz'  ,  'Tier 1 Emerald'  ,  'Tier 1 Opal']
 )
 
 // 6 . Create NFT Item
